@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dzimbahwe- Discover Zimbabwe</title>
+	<link rel="icon" type="image/png" href="./img/dzimbahwe.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.3.1/gridlex.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+
+	<!--navigation-->
+	<div class="navbar" style="height:100px">
+
+      <ul style="padding-left: 0px;">
+
+        <img class="logo" src="./img/dzimbahwe1.svg"  alt="logo" href="#">
+
+        <section class="div_navbar_items">
+          <li class="navbar_items"> <a href="index.html"> Home </a> </li>
+          <li class="navbar_items"> <a href="destinations.html"> Destinations </a> </li>
+          <li class="navbar_items"> <a href="carrental.html"> Car Rentals </a> </li>
+					<li class="navbar_items"> <a href="experience.html"> Experiences </a> </li>
+					<li class="navbar_items"> <a href="blog.html"> Blog </a> </li>
+          <li class="navbar_items"> <a href="wanderlast.html"> Wanderlast </a> </li>
+          <li class="navbar_items"> <a href="contact.html"> Contact Us </a> </li>
+        </section>
+
+        <li class="icon">
+          <a href="#" onclick="navBarFunction()"> &#9776;</a>
+        </li>
+      </ul>
+    </div>
+	<!--navigatio end-->
+
+	<!--search bar-->
+
+	<!--search bar end-->
+
+			<!--hero slider-->
+
+			<div class="grid-3-center" style="padding-top:50px">
+				<div class="col">
+          <img src="./img/van.svg" alt="bumi" style="width:100%;padding-top:20px">
+        </div>
+      </div>
+
+			<!--buttons-->
+      <div class="chibutton">
+          <div class="box one">
+            <div class="item">
+							<button id="pop" onclick="document.getElementById('id01').style.display='block'" style="width:auto;background-color:rgba(76, 175, 80, 0)">Create Trip</button>
+						</div>
+        </div>
+
+        <div class="box two">
+          <div class="item">Join Trip</div>
+        </div>
+
+      </div>
+	<!--create trip Modal form-->
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="container">
+        <label><b>Email</b></label>
+	        <input type="text" placeholder="email" name="email" required>
+
+        <label><b>Trip name</b></label>
+	        <input type="text" placeholder="name" name="name" required>
+
+        <label><b>Purpose of Trip</b></label>
+        <textarea type="text" placeholder="describe nature of trip" name="description" required> </textarea>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn" >Create</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--Modal form end-->
+
+	<div class="grid" style="padding-top:100px">
+		<div class="col-12">
+			<h1>Road Trip!</h1>
+			<p>Go on an adventure with like minded people and discover zimbabwe...
+		</p>
+	</div>
+	</div>
+	<!--Another Form end!!!!-->
+
+
+  <div class="container">
+  	<div class="cards">
+  		<a class="card" href="#">
+  			<span class="card-header" style="background-image: url('./img/kariba.jpg');">
+  				<span class="card-title">
+  					<h3>Nomads</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+  				We are always somewhere doing something.
+  			</span>
+  		</a>
+
+  		<a class="card" href="#">
+				<span class="card-header" style="background-image: url('./img/hwange.jpg');">
+  				<span class="card-title">
+  					<h3>Wild Ones</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+  				A young group of people who like to travel.
+  			</span>
+  		</a>
+
+  		<a class="card" href="#">
+				<span class="card-header" style="background-image: url('./img/hwange2.jpg');">
+  				<span class="card-title">
+  					<h3>Cape to Cairo</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+					Always on the road! All day everyday
+  			</span>
+  		</a>
+
+  		<a class="card" href="#">
+				<span class="card-header" style="background-image: url('./img/nyanga2.jpg');">
+  				<span class="card-title">
+  					<h3>Oh Wander</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+  				Point us where the beauty is
+				</span>
+  		</a>
+
+  		<a class="card" href="#">
+				<span class="card-header" style="background-image: url('./img/harare.jpg');">
+  				<span class="card-title">
+  					<h3>Town Folk</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+  				Urban movement. Exploring the hidden parts of the city.
+  			</span>
+  		</a>
+
+
+
+</div>
+
+<!---flex-->
+
+<!---flex-->
+
+<!--footer-->
+<footer style="border-top: 1px solid #eee;font-size:10px">
+	<div class="col-2"></div>
+		<img src="./img/facebook.png" alt="" style="width:40px">
+		<img src="./img/twitter.png" alt="" style="width:40px">
+		<img src="./img/vimeo.png" alt="" style="width:40px">
+    <div class="col-6" data-push-left="off-1" data-push-right="off-1"><p>©2017 Dzimbahwe</p></div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

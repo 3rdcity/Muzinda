@@ -1,0 +1,94 @@
+<?php 
+if ( $_SERVER["REQUEST_METHOD"]=="POST"){
+		$name=trim(filter_input(INPUT_POST,"name", FILTER_SANITIZE_STRING));
+		$Last_name=trim($_POST["Last_name"]);
+		$Email= trim($_POST["email"]);
+		$Phone=trim($_POST["phone"]);
+		$country= trim($_POST["country"]);
+		$Message= trim($_POST["message"]);
+		
+	if ($name== "" || $Email== "" || $Message == ""){
+	echo "Please enter the required data: name";
+	exit;
+		}
+		echo "<pre>";
+		$email_inquiry= " ";
+		$email_inquiry.= "Name" .$name. "\n";
+		$email_inquiry.= "Last Name" .$Last_name ."\n";
+		$email_inquiry.= "Email". $Email. "\n";
+		$email_inquiry.= "Phone". $Phone. "\n";
+		$email_inquiry.= "Country". $country. "\n";
+		$email_inquiry.= "Inquiry".$Message ."\n";
+		echo $email_inquiry;
+		echo "</pre>";
+		// to send email.
+
+		//Redirect
+		header("location:Contact.php?status=thanks");}
+$pageTitle= "Contact Us";
+
+include ("inc/Header.php");?> 
+
+<h1 style="font-size:400%;">We're Here to Help!</h1>
+
+     <div class="paragraph">
+	  <?php if (isset($_GET["status"]) && $_GET["status"]== "thanks"){
+	  echo "<p> Thank you for your inquiry. We are processing your request shortly </p>";}
+	  	  else {
+	  ?>	
+    <p style="font-size:150%; color: brown;" >Here at Dzimbahwe we are on hand to help you enjoy the best of Zimbabwe. From the waterfalls at Victoria Falls to the evergreen Mountains of Nyanga, Safaris in the lowveld to the shores of Lake Kariba we will help you enjoy it. We the the daunting task of choosing the right place for you to enjoy. So leave that burden to us. Reach out to us and we will happily answer your questions and provide you with
+        all the information you require.</p>
+    </div>
+    <!---flex-->
+<div class="grid">
+.    <div class="col-7">
+        <form action= "Contact.php" method="post">
+            <h1>Feeling Formal</h1>
+            <span>(then fill out this form)</span>
+            <h2>Get in touch</h2>
+		
+    <div>
+        <label for="name"> First Names:</label>
+        <input type="text" id="name" name="name">
+    </div>
+     <div>
+        <label for="Lastname">Last Name:</label>
+        <input type="text" id="Lastname" name="Lastname">
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+    </div>
+     <div>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+    </div>
+     <div>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+    </div>
+    <div class="button">
+  <button type="submit">Send your message</button>
+</div>
+</form>
+
+    </div> <!-- second row: three columns (6+3+3) -->
+    <div class="col-4"> 
+        <h1>Prefer other means</h1>
+        <span>(Choose What suits you)</span>
+        <p>Tel: 2634749980</p>
+        <p>Mobile: 263774732982</p>
+        <p>Fax: 2634749981</p>
+        <p>Whatsapp: 263736440719</p>
+        <p>info@dzimbahwe.com</p>
+		
+
+		</div>
+    </div>
+	<?php } ?>
+<!---flex-->
+<?php include ("inc/Footer.php");?>

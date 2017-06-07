@@ -1,0 +1,192 @@
+
+<?php 
+$pageTitle= "Dzimbahwe- Discover Zimbabwe";
+include ("inc/Header.php");?> 
+	<!--search bar-->
+	<div class="search__container" style="padding-top:60px">
+    <p class="search__title">
+
+    </p>
+    <input class="search__input" type="text" placeholder="Search">
+</div>
+	<!--search bar end-->
+
+	<div class="grid" style="padding-top:40px"> <!-- Four <div class="col"> for 4 columns in the grid -->
+		<div class="col-12">
+			<!--hero slider-->
+
+			<div class="grid">
+				<ul class="slides" style="width:100%">
+			    <input type="radio" name="radio-btn" id="img-1" checked />
+			    <li class="slide-container">
+					<div class="slide">
+						<img src="./img/vicfallssikele.jpg" alt="bumi" style="">
+			        </div>
+					<div class="nav">
+						<label for="img-6" class="prev">&#x2039;</label>
+						<label for="img-2" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-2" />
+			    <li class="slide-container">
+			        <div class="slide">
+
+			          <img src="./img/somalisa.jpg" alt="bumi" style="">
+								<figcaption>
+					    <h3>Somalisa Sunset</h3>
+					    <h5>Visit</h5>
+					  </figcaption><a href="#"></a>
+
+			        </div>
+					<div class="nav">
+						<label for="img-1" class="prev">&#x2039;</label>
+						<label for="img-3" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-3" />
+			    <li class="slide-container">
+			        <div class="slide">
+			          <img src="./img/nyangaslide.jpg" alt="bumi" style="">
+			        </div>
+					<div class="nav">
+						<label for="img-2" class="prev">&#x2039;</label>
+						<label for="img-4" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+					<input type="radio" name="radio-btn" id="img-4" />
+			    <li class="slide-container">
+			        <div class="slide">
+			        <img src="./img/Crowne plaza.jpg" alt="bumi" style="">
+			        </div>
+					<div class="nav">
+						<label for="img-3" class="prev">&#x2039;</label>
+						<label for="img-5" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-5" />
+			    <li class="slide-container">
+			        <div class="slide">
+			        <img src="./img/danceslide.jpg" alt="bumi" style="">
+			        </div>
+					<div class="nav">
+						<label for="img-4" class="prev">&#x2039;</label>
+						<label for="img-6" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-6" />
+			    <li class="slide-container">
+			        <div class="slide">
+			          <img src="./img/Shashe.jpg" alt="bumi" style="width:100%">
+			        </div>
+					<div class="nav">
+						<label for="img-5" class="prev">&#x2039;</label>
+						<label for="img-1" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <li class="nav-dots">
+			      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+			      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+			      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+			      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+			      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+			      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+			    </li>
+			</ul>
+				</div> <!-- first row: one column -->
+		</div>
+	</div> <!-- first row: one column -->
+
+	<!--Another Form to go below the slider!!!!-->
+
+
+
+	<!--Another Form end!!!!-->
+
+
+		<div class="grid" style="padding-top: 100px">
+    <div class="col">
+			<figure class="snip1584">
+			<img src="./img/chinhoyi.jpg" alt="bumi" style="width:100%">
+			<figcaption>
+    <h3>Chinhoyi</h3>
+    <h5>Visit</h5>
+  </figcaption><a href="#"></a>
+</figure>
+		</div>
+    <div class="col">
+			<figure class="snip1584">
+			<img src="./img/harare.jpg" alt="bumi" style="width:100%">
+			<figcaption>
+    <h3>Harare</h3>
+    <h5>Visit</h5>
+  </figcaption><a href="#"></a>
+</figure>
+		</div>
+    <div class="col">
+			<figure class="snip1584">
+			<img src="./img/lokhutula.jpg" alt="bumi" style="width:100%">
+			<figcaption>
+    <h3>Bulawayo</h3>
+    <h5>Visit</h5>
+  </figcaption><a href="#"></a>
+</figure>
+		</div>
+    <div class="col">
+			<figure class="snip1584">
+			<img src="./img/vicfallssikele.jpg" alt="bumi" style="">
+			<figcaption>
+    <h3>Vic Falls</h3>
+    <h5>Visit</h5>
+  </figcaption><a href="#"></a>
+</figure>
+		</div>
+</div>
+
+<div class="grid" style="padding-top: 40px">
+    <div class="col">
+			<figure class="snip1584">
+			<img src="./img/kariba.jpg" alt="bumi" style="width:100%">
+			<figcaption>
+    <h3>kariba</h3>
+    <h5>Visit</h5>
+  </figcaption><a href="#"></a>
+</figure>
+		</div>
+    <div class="col">
+			<figure class="snip1584">
+			<img src="./img/nyanga.jpg" alt="bumi" style="">
+			<figcaption>
+    <h3>Nyanga</h3>
+    <h5>Visit</h5>
+  </figcaption><a href="#"></a>
+	</figure>
+		</div>
+    <div class="col">
+			<figure class="snip1584">
+			<img src="./img/hwange3.jpg" alt="bumi" style="width:400px">
+			<figcaption>
+    <h3>Hwange</h3>
+    <h5>Visit</h5>
+  </figcaption><a href="#"></a>
+	</figure>
+		</div>
+</div>
+
+<!---flex-->
+<div class="grid">
+.    <div class="col-7"><img src="./img/vicfallssafarilodge.jpg" alt="bumi" style="padding-left:46px"></div> <!-- second row: three columns (6+3+3) -->
+    <div class="col-4"> <h1>Victoria Falls Safari Lodge</h1>
+			<p>Visit this perfectly situated lodge in Victoria Falls and experience Zimbabwe like you have never done before.
+			 Surrounded by prestine scenery, this place is perfect for that sunset drink.</p>
+
+		</div>
+.</div>
+<!---flex-->
+
+<?php include ("inc/Footer.php");?>

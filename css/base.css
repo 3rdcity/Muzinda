@@ -1,0 +1,775 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+font-family: 'Titillium Web', sans-serif;	line-height: 1.6;
+	color: #ccc;
+	margin: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+a {
+	color: #093a58;
+}
+
+h2,h3 {
+	color: #fff;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+footer {
+	padding-top: 60px;
+	border-top: 1px solid #eee;
+}
+
+
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/*search bar*/
+
+/*search bar*/
+
+/* ---- Navigation ---- */
+
+
+/* ---- Page Elements ---- */
+
+
+
+.logo{
+  height: 250px;
+  width: 350px;
+  padding-bottom: 80px;
+  margin: 4px;
+  position:absolute;
+  left:-90px;
+  top:-50px;
+
+}
+
+.headline {
+	margin-bottom: 0;
+}
+.feat-img {
+	border-radius: 5px;
+}
+
+/*navbar*/
+.container {
+  margin: auto;
+  width: 90%;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
+  margin: auto;
+  background-color:	#212121;
+  width: 100%;
+  left:0;
+  top:0;
+}
+
+.navbar li.logo,
+.navbar li.navbar_items {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar li a {
+font-family: 'Titillium Web', sans-serif;	line-height: 1.6;  font-size: 1.05em;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+}
+
+.navbar li.navbar_items a:hover {
+  border-bottom-style:groove;
+  border-bottom-color: white;
+  /*   padding-bottom: 5px; */
+}
+
+.navbar li.icon {
+  display: none;
+}
+
+.div_navbar_items {
+  float: right;
+  padding-right:1%;
+}
+
+.intro{
+  position: relative;
+  top: 100px;
+  text-align:center;
+}
+
+p {
+  color:white;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ----------------------- */
+
+/*wanderlust buttons*/
+
+.box {
+  position: relative;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  color: #F27059;
+}
+
+.item {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s all ease;
+}
+
+.one:before, .one:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #4caf50;
+  transition: 0.4s all ease;
+}
+.one:before {
+  top: 0;
+}
+.one:after {
+  bottom: 0;
+}
+.one .item:before, .one .item:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  height: 100%;
+  width: 2px;
+  background: #4caf50;
+  transition: 0.4s all ease;
+  z-index: -1;
+}
+.one .item:before {
+  left: 0;
+}
+.one .item:after {
+  right: 0;
+}
+.one:hover:before, .one:hover:after {
+  transition: 0.4s all ease;
+}
+.one:hover:before {
+  transform: translateY(-10px);
+}
+.one:hover:after {
+  transform: translateY(10px);
+}
+.one:hover .item {
+  color: white;
+}
+.one:hover .item:before, .one:hover .item:after {
+  width: 100%;
+  transition: 0.4s all ease;
+}
+
+/*button 2*/
+.two {
+  box-sizing: border-box;
+  border: 2px solid #F27059;
+  position: relative;
+	float: left;
+}
+.two:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 50px;
+  transition: 0.4s all ease;
+  background: #F27059;
+  left: 0;
+  z-index: -1;
+}
+.two:hover {
+  color: white;
+}
+.two:hover:before {
+  width: 100%;
+  transition: 0.4s all ease;
+}
+
+.chibutton {
+	padding-left:;
+	justify-content: center;
+	display:flex;
+}
+/*wanderlust buttons*/
+
+.three {
+  border-bottom: 1px solid #eee;
+	position: relative;
+	width: 250px;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+/*Wanderlust Modal forn*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Set a style for all buttons */
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(87, 87, 86, 0.5);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+		color:white;
+}
+
+.modal-content,label {
+	color:white;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+/*Wanderlust Modal form*/
+
+@use postcss-color-function;
+@use postcss-nested;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+/* Base styling */
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+/* Base styling */
+
+/*Another subscription bar*/
+section {
+  max-width: 740px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.column {
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+section:first-of-type .column:first-of-type {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 0;
+}
+/*Another subscription bar*/
+
+/*Blog styles*/
+
+/*Blog styles*/
+
+
+/*main-search bar*/
+.search__container {
+    padding-top: 48px;
+}
+
+.search__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.search__input {
+    width: 400px;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input:hover,
+        .search__input:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+.credits__container {
+    margin-top: 24px;
+}
+
+.credits__text {
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.credits__link {
+    color: #ff8b88;
+    text-decoration: none;
+    transition: color 250ms ease-in;
+}
+
+.credits__link:hover,
+        .credits__link:focus {
+    color: rgb(191, 137, 135);
+}
+
+
+/* responsive navigation bar: CSS */
+
+
+
+@media screen and (max-width:875px) {
+  .navbar li.navbar_items {
+    display: none;
+  }
+  .navbar li.icon {
+    float: right;
+    display: inline-block;
+    /**position: absolute;**/
+    right: 0;
+    top: 19px;
+  }
+}
+
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon.*/
+
+@media screen and (max-width:875px) {
+  .navbar.responsive {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(87, 87, 86, 0.5);
+    transition: background-color .6s;
+  }
+
+  .navbar.responsive li.logo {
+    floatL: left;
+    display: block;
+  }
+  .navbar.responsive .div_navbar_items {
+    float: none;
+    padding-right:0;
+  }
+
+  .navbar.responsive li.navbar_items {
+    display: block;
+    padding: 50px;
+    font-size: 25px;
+  }
+  .navbar.responsive li.navbar_items a {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar.responsive li.navbar_items a:hover{
+    color:#17171e;
+    border-bottom-color: transparent;
+
+  }
+
+
+
+}
+
+/* end of navgation bar styling - responsive */
+
+
+/**slider properties**/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+html, body { background: #333; }
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: absolute;
+		padding-top: 90px;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #F4F4F4;
+    font-size: 70pt;
+    text-align: center;
+    line-height: 200px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next {
+	right: 0;
+	padding-top: 90px;
+ }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/**hover effects**/
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.snip {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px 8px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+}
+.snip * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip:before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  top: 100%;
+  content: '';
+  background-color: rgba(51, 51, 51, 0.9);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+.snip img {
+  vertical-align: top;
+  max-width: 100%;
+	height: 250px;
+  backface-visibility: hidden;
+}
+.snip figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.snip h3,
+.snip h5 {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+.snip h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  margin-bottom: 5px;
+}
+.snip h5 {
+  font-weight: normal;
+  background-color: #ae895d;
+  padding: 3px 10px;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.snip a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip:hover:before,
+.snip.hover:before {
+  top: 10px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.snip:hover h3,
+.snip.hover h3,
+.snip:hover h5,
+.snip.hover h5 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+.snip:hover h3,
+.snip.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.snip:hover h5,
+.snip.hover h5 {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+  text-align: center;
+}
+
+/**hover effects**/
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+}

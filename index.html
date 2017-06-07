@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dzimbahwe- Discover Zimbabwe</title>
+	<link rel="icon" type="image/png" href="./img/dzimbahwe.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.3.1/gridlex.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+
+	<!--navigation-->
+	<div class="navbar" style="height:100px">
+
+      <ul style="padding-left: 0px;">
+
+        <img class="logo" src="./img/dzimbahwe1.svg"  alt="logo" href="#">
+
+        <section class="div_navbar_items">
+          <li class="navbar_items"> <a href="index.html" class="selected"> Home </a> </li>
+          <li class="navbar_items"> <a href="destinations.html"> Destinations </a> </li>
+          <li class="navbar_items"> <a href="carrental.html"> Car Rentals </a> </li>
+          <li class="navbar_items"> <a href="experience.html"> Experiences </a> </li>
+					<li class="navbar_items"> <a href="blog.html"> Blog </a> </li>
+					<li class="navbar_items"> <a href="wanderlast.html"> Wanderlast </a> </li>
+          <li class="navbar_items"> <a href="contact.html"> Contact Us </a> </li>
+        </section>
+
+        <li class="icon">
+          <a href="#" onclick="navBarFunction()"> &#9776;</a>
+        </li>
+      </ul>
+    </div>
+	<!--navigatio end-->
+
+
+	<div class="grid" style="padding-top:100px">
+		<div class="col-12">
+			<!--hero slider-->
+
+			<div class="grid">
+				<ul class="slides" style="width:100%">
+			    <input type="radio" name="radio-btn" id="img-1" checked />
+			    <li class="slide-container">
+					<div class="slide">
+						<img src="./img/vicfallssikele.jpg" alt="bumi" style="">
+			        </div>
+					<div class="nav">
+						<label for="img-6" class="prev">&#x2039;</label>
+						<label for="img-2" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-2" />
+			    <li class="slide-container">
+			        <div class="slide">
+
+			          <img src="./img/somalisa.jpg" alt="bumi" style="">
+								<figcaption>
+					    <h3>Somalisa Sunset</h3>
+					    <h5>Visit</h5>
+					  </figcaption><a href="#"></a>
+
+			        </div>
+					<div class="nav">
+						<label for="img-1" class="prev">&#x2039;</label>
+						<label for="img-3" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-3" />
+			    <li class="slide-container">
+			        <div class="slide">
+			          <img src="./img/nyangaslide.jpg" alt="bumi" style="">
+			        </div>
+					<div class="nav">
+						<label for="img-2" class="prev">&#x2039;</label>
+						<label for="img-4" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+					<input type="radio" name="radio-btn" id="img-4" />
+			    <li class="slide-container">
+			        <div class="slide">
+			        	<img src="./img/Crowne plaza.jpg" alt="bumi" style="">
+			        </div>
+								<div class="nav">
+									<label for="img-3" class="prev">&#x2039;</label>
+									<label for="img-5" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-5" />
+			    <li class="slide-container">
+			        <div class="slide">
+			        	<img src="./img/danceslide.jpg" alt="bumi" style="">
+			        </div>
+								<div class="nav">
+									<label for="img-4" class="prev">&#x2039;</label>
+									<label for="img-6" class="next">&#x203a;</label>
+							</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-6" />
+			    	<li class="slide-container">
+			        <div class="slide">
+			          <img src="./img/Shashe.jpg" alt="bumi" style="width:100%">
+			        </div>
+								<div class="nav">
+									<label for="img-5" class="prev">&#x2039;</label>
+									<label for="img-1" class="next">&#x203a;</label>
+								</div>
+			    	</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<!--Another Form to go below the slider!!!!-->
+	<div id="caption" class="grid" style="padding-top:100px">
+		<div class="col-12">
+			<h1>Explore Some of our Finest Places</h1>
+			<p> Hover over the images
+		</p>
+	</div>
+	</div>
+	<!--Another Form end!!!!-->
+
+
+		<div class="grid" style="padding-top: 100px">
+    <div class="col">
+			<figure class="snip">
+				<img src="./img/chinhoyi.jpg" alt="bumi" style="width:100%">
+					<figcaption>
+				    <h3>Chinhoyi</h3>
+				    <h5>Visit</h5>
+				</figcaption><a href="destinations.html"></a>
+			</figure>
+		</div>
+    <div class="col">
+			<figure class="snip">
+				<img src="./img/harare.jpg" alt="bumi" style="width:100%">
+					<figcaption>
+				    <h3>Harare</h3>
+				    <h5>Visit</h5>
+				</figcaption><a href="destinations.html"></a>
+			</figure>
+		</div>
+    <div class="col">
+			<figure class="snip">
+				<img src="./img/lokhutula.jpg" alt="bumi" style="width:100%">
+					<figcaption>
+				    <h3>Bulawayo</h3>
+				    <h5>Visit</h5>
+				</figcaption><a href="destinations.html"></a>
+			</figure>
+		</div>
+    <div class="col">
+			<figure class="snip">
+				<img src="./img/vicfallssikele.jpg" alt="bumi" style="">
+					<figcaption>
+				    <h3>Vic Falls</h3>
+				    <h5>Visit</h5>
+				</figcaption><a href="destinations.html"></a>
+			</figure>
+		</div>
+</div>
+
+<div class="grid" style="padding-top: 40px">
+    <div class="col">
+			<figure class="snip">
+				<img src="./img/kariba.jpg" alt="bumi" style="width:100%">
+					<figcaption>
+				    <h3>kariba</h3>
+				    <h5>Visit</h5>
+				</figcaption><a href="destinations.html"></a>
+			</figure>
+		</div>
+    <div class="col">
+			<figure class="snip">
+				<img src="./img/nyanga.jpg" alt="bumi" style="">
+					<figcaption>
+				    <h3>Nyanga</h3>
+				    <h5>Visit</h5>
+					</figcaption><a href="destinations.html"></a>
+			</figure>
+		</div>
+    <div class="col">
+			<figure class="snip">
+				<img src="./img/hwange3.jpg" alt="bumi" style="width:400px">
+					<figcaption>
+				    <h3>Hwange</h3>
+				    <h5>Visit</h5>
+				</figcaption><a href="destinations.html"></a>
+			</figure>
+		</div>
+</div>
+
+<!--Call out text!!!!-->
+<div class="grid" style="padding-top:50px">
+	<div class="col-12">
+		<h1>Premium Outdoor Locations</h1>
+</div>
+</div>
+<!--Call out text end!!!!-->
+
+
+<!---flex-->
+<div class="grid">
+	<div class="cards">
+    	<div class="col-7"><img src="./img/vicfallssafarilodge.jpg" alt="bumi"></div> <!-- second row: three columns (6+3+3) -->
+    		<div class="col-5"> <h1>Victoria Falls Safari Lodge</h1>
+					<p>Visit this perfectly situated lodge in Victoria Falls and experience Zimbabwe like you have never done before.
+			 Surrounded by prestine scenery, this place is perfect for that sunset drink.</p>
+
+			 <!--redirect to dummy page-->
+			 <div class="box two">
+			 	<div class="item">View More</div>
+			 </div>
+		</div>
+	</div>
+</div>
+<!---flex-->
+
+<!--footer-->
+<footer style="border-top: 1px solid #eee;font-size:10px">
+	<div class="col-2"></div>
+			<img src="./img/facebook.png" alt="" style="width:40px">
+			<img src="./img/twitter.png" alt="" style="width:40px">
+			<img src="./img/vimeo.png" alt="" style="width:40px">
+  <div class="col-6" data-push-left="off-1" data-push-right="off-1"><p>©2017 Dzimbahwe</p></div>
+</footer>
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

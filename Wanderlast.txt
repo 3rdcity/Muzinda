@@ -1,0 +1,130 @@
+<?php 
+$pageTitle= "Wanderlast";
+include ("inc/Header.php");?>
+	<!--navigatio end-->
+
+	<!--search bar-->
+
+	<!--search bar end-->
+
+			<!--hero slider-->
+
+			<div class="grid-3-center" style="padding-top:50px">
+				<div class="col">
+          <img src="./img/van.svg" alt="bumi" style="width:100%;padding-top:20px">
+        </div>
+      </div>
+
+      <div class="chibutton">
+          <div class="box one">
+            <div class="item">
+							<button id="pop" onclick="document.getElementById('id01').style.display='block'" style="width:auto;background-color:rgba(76, 175, 80, 0)">Create Trip</button>
+						</div>
+        </div>
+
+        <div class="box two">
+          <div class="item">Join Trip</div>
+        </div>
+
+      </div>
+	<!--create trip Modal form-->
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="container">
+        <label><b>Email</b></label>
+        <input type="text" placeholder="email" name="email" required>
+
+        <label><b>Trip name</b></label>
+        <input type="text" placeholder="name" name="name" required>
+
+        <label><b>Purpose of Trip</b></label>
+        <textarea type="text" placeholder="describe nature of trip" name="description" required> </textarea>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn" >Create</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--Modal form end-->
+
+<div class="grid">
+  <div class="col-12">
+    <h1>Road Trip!!!</h1>
+    <p>Want to travel? Noone to travel with? Say no more!Join a group of like minded people and embark on an adventurous trip
+    around Zimbabwe. Simply browse through the open trips and click join or start your own trip and find your tribe, it's that simple.
+  </p>
+</div>
+</div>
+	<!--Another Form end!!!!-->
+
+
+  <div class="container">
+  	<div class="cards">
+  		<a class="card" href="#">
+  			<span class="card-header" style="background-image: url('./img/kariba.jpg');">
+  				<span class="card-title">
+  					<h3>Nomads</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+  				We are always somewhere doing something.
+  			</span>
+  		</a>
+
+  		<a class="card" href="#">
+				<span class="card-header" style="background-image: url('./img/hwange.jpg');">
+  				<span class="card-title">
+  					<h3>Wild Ones</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+  				A young group of people who like to travel.
+  			</span>
+  		</a>
+
+  		<a class="card" href="#">
+				<span class="card-header" style="background-image: url('./img/hwange2.jpg');">
+  				<span class="card-title">
+  					<h3>Cape to Cairo</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+					Always on the road! All day everyday
+  			</span>
+  		</a>
+
+  		<a class="card" href="#">
+				<span class="card-header" style="background-image: url('./img/nyanga2.jpg');">
+  				<span class="card-title">
+  					<h3>Oh Wander</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+  				Point us where the beauty is
+				</span>
+  		</a>
+
+  		<a class="card" href="#">
+				<span class="card-header" style="background-image: url('./img/harare.jpg');">
+  				<span class="card-title">
+  					<h3>Town Folk</h3>
+  				</span>
+  			</span>
+  			<span class="card-summary">
+  				Urban movement. Exploring the hidden parts of the city.
+  			</span>
+  		</a>
+
+
+
+</div>
+
+<!---flex-->
+
+<!---flex-->
+
+<?php include ("inc/Footer.php");?>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> <?php echo $pageTitle; ?></title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.3.1/gridlex.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+
+	<!--navigation-->
+	<div class="navbar" style="height:100px">
+
+      <ul style="padding-left: 0px;">
+
+        <img class="logo" src="./img/dzimbahwe1.svg"  alt="logo" href="#">
+.
+        <section class="div_navbar_items">
+          <li class="navbar_items"> <a href="Index.php"> Home </a> </li>
+          <li class="navbar_items"> <a href="Destinations.php"> Destinations </a> </li>
+          <li class="navbar_items"> <a href="Car-Rentals.php"> Car Rentals </a> </li>
+		  <li class="navbar_items"> <a href="blog.html"> Blog </a> </li>
+          <li class="navbar_items"> <a href="Wanderlast.php"> Wanderlast </a> </li>
+          <li class="navbar_items"> <a href="Experiences.php"> Experiences </a> </li>
+          <li class="navbar_items"> <a href="Contact.php"> Contact Us </a> </li>
+        </section>
+
+        <li class="icon">
+          <a href="#" onclick="navBarFunction()"> &#9776;</a>
+        </li>
+      </ul>
+    </div>
+	<!--navigatio end-->

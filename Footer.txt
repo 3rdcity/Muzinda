@@ -1,0 +1,16 @@
+
+<footer style="padding-top: 60px; border-top: 1px solid #eee; margin-top: 0px;font-size:10px">
+	<div class="col-2"</div>
+		<img src="./img/facebook.png" alt="" style="width:40px">
+		<img src="./img/twitter.png" alt="" style="width:40px">
+		<img src="./img/vimeo.png" alt="" style="width:40px">
+    <div class="col-6" data-push-left="off-1" data-push-right="off-1"><p>© <?php echo date("Y");?> Dzimbahwe</p></div>
+    <div class="col-2"</div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
